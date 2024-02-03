@@ -25,7 +25,7 @@ makedepends=(
   texlive-latexextra
 )
 options=('!strip')
-_srcname=biglinux-${pkgver%.*}
+_srcname=linux-${pkgver%.*}
 _srctag=v${pkgver%.*}-${pkgver##*.}
 source=(
   https://cdn.kernel.org/pub/linux/kernel/v${pkgver%%.*}.x/${_srcname}.tar.xz
