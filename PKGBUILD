@@ -1,8 +1,7 @@
 # Maintainer: Jan Alexander Steffens (heftig) <heftig@archlinux.org>
 
-pkgbase=linux
+pkgbase=biglinux
 pkgver=6.7.3
-pkgpatch=6.7.3.arch1
 pkgrel=2
 pkgdesc='Linux'
 url='https://github.com/archlinux/linux'
@@ -27,7 +26,7 @@ makedepends=(
 )
 options=('!strip')
 _srcname=linux-${pkgver%.*}
-_srctag=v${pkgpatch%.*}-${pkgpatch##*.}
+_srctag=v${pkgver%.*}-${pkgver##*.}
 source=(
   https://cdn.kernel.org/pub/linux/kernel/v${pkgver%%.*}.x/${_srcname}.tar.xz
   $url/releases/download/$_srctag/linux-$_srctag.patch.zst
